@@ -1,0 +1,24 @@
+/* colors */
+$bg_primary: #f3f3f3;
+
+$bg_light: #eaeaea;
+$bg_dark: #353535;
+
+$green_light: #99e2d0;
+$green_dark: #008766;
+
+$purple_light: #ff79da;
+$purple_dark: #9356dc;
+
+/* Media queries breakpopionts */
+$breakpoints: (
+  'medium': (
+    min-width: 768px,
+  ),
+  'large': (
+    min-width: 1024px,
+  ),
+  'huge': (
+    min-width: 1200px,
+  ),
+);
