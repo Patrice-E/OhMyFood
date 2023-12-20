@@ -1,0 +1,26 @@
+@mixin gradient($start, $end) {
+  background: linear-gradient(180deg, $start 0%, $end 100%);
+}
+
+@mixin bg_list($imageurl) {
+  background: url($imageurl) center left 33px no-repeat;
+}
+
+@mixin responsive($breakpoint) {
+  $raw-query: map-get($breakpoints, $breakpoint);
+
+  @if $raw-query {
+    $query: if(
+      type-of($raw-query) == 'string',
+      unquote($raw-query),
+      inspect($raw-query)
+    );
+
+    @media #{$query} {
+      @content;
+    }
+  } @else {
+    @error 'Aucune valeur pour `#{$breakpoint}`. '
+         + 'Vérifiez que cela existe dans la variable `$breakpoints`.';
+  }
+}

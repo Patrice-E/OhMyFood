@@ -1,0 +1,10 @@
+.btn {
+  @include gradient($purple_light, $purple_dark);
+  border: none;
+  height: 50px;
+  border-radius: 25px;
+  color: $light;
+  padding: 0 25px;
+  font-weight: 500;
+  font-size: 16px;
+}

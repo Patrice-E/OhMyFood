@@ -1,5 +1,91 @@
 /* Contenu principal */
 .content {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  section:nth-child(even) {
+    background-color: $light;
+  }
+}
+
+/*-- Intro --*/
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 15px;
+
+  h1,
+  p {
+    text-align: center;
+  }
+
+  h1 {
+    padding: 0 35px;
+    font-weight: 700;
+    font-size: 24px;
+  }
+  p {
+    font-weight: 300;
+    font-size: 18px;
+  }
+}
+
+/*-- Fonctionnement --*/
+.fonctionnement {
+  padding: 30px 15px;
+
+  .content {
+    max-width: 1053px;
+    align-items: flex-start;
+
+    &__list {
+      min-width: 286px;
+      padding-left: 12.5px;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+
+      li {
+        box-shadow: 0px 4px 15px 0px #00000026;
+        border-radius: 20px;
+        display: flex;
+        padding-left: 73px;
+        position: relative;
+        &::before {
+          position: absolute;
+          font-size: 14px;
+          color: white;
+          background-color: $purple_dark;
+          width: 24px;
+          height: 24px;
+          top: 25%;
+          left: -12px;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
+      .l1 {
+        @include bg_list('../../images/icons/phone.svg');
+        &::before {
+          content: '1';
+        }
+      }
+      .l2 {
+        @include bg_list('../../images/icons/list.svg');
+        &::before {
+          content: '2';
+        }
+      }
+      .l3 {
+        @include bg_list('../../images/icons/store.svg');
+        &::before {
+          content: '3';
+        }
+      }
+    }
+  }
 }
