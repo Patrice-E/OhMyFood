@@ -320,13 +320,6 @@ ul {
   font-size: 17px;
 }
 
-.empty,
-.full {
-  position: absolute;
-  opacity: 1;
-  transition: opacity 0.6s ease-in-out;
-}
-
 .togglelike {
   margin: 22px;
 }
@@ -344,6 +337,12 @@ ul {
   cursor: pointer;
   width: 22px;
   height: 21px;
+}
+.togglelike__switch .empty,
+.togglelike__switch .full {
+  position: absolute;
+  opacity: 1;
+  transition: opacity 0.6s ease-in-out;
 }
 .togglelike__switch .empty {
   opacity: 1;

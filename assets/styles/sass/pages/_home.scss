@@ -173,12 +173,6 @@
   }
 }
 
-.empty,
-.full {
-  position: absolute;
-  opacity: 1;
-  transition: opacity 0.6s ease-in-out;
-}
 .togglelike {
   margin: 22px;
   &__checkbox {
@@ -197,6 +191,12 @@
   }
   &__switch {
     position: relative;
+    .empty,
+    .full {
+      position: absolute;
+      opacity: 1;
+      transition: opacity 0.6s ease-in-out;
+    }
     .empty {
       // display: block;
       opacity: 1;
