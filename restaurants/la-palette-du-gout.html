@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/styles/css/index.css" />
+    <title>La palette du goût</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <section class="header__banner">
+          <a href="../index.html">
+            <img
+              src="../assets/images/icons/arrowback.svg"
+              alt=""
+              class="back__arrow"
+            />
+          </a>
+          <img
+            src="../assets/images/logo/ohmyfood@2x.svg"
+            alt="Logo OhMyFood"
+          />
+        </section>
+        <img
+          src="../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+          alt="Assiette de saumon et salade"
+        />
+      </header>
+      <main class="menus">
+        <div class="max-content">
+          <header class="menus__header">
+            <h1>La palette du goût</h1>
+            <div class="togglelike">
+              <input
+                type="checkbox"
+                name="likecheckbox"
+                id="likemenilmontant"
+                class="togglelike__checkbox"
+              />
+              <label for="likemenilmontant" class="togglelike__switch">
+                <img
+                  src="../assets/images/icons/likeempty.svg"
+                  alt=""
+                  class="empty"
+                />
+                <img
+                  src="../assets/images/icons/likefull.svg"
+                  alt=""
+                  class="full"
+                />
+              </label>
+            </div>
+          </header>
+          <section class="menu">
+            <h2 class="menu__title">Entrées</h2>
+            <article class="card">
+              <div class="card__plate">
+                <h3>Fricassée d'escargots</h3>
+                <span>Au piment d'espelette</span>
+              </div>
+              <div class="card__desc">
+                <span>25</span>
+                <span>€</span>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card__plate">
+                <h3>Foie gras de canard mi-cuit</h3>
+                <span>Et ses copeaux de truffe noire</span>
+              </div>
+              <div class="card__desc">
+                <span>35</span>
+                <span>€</span>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card__plate">
+                <h3>Œuf au plat</h3>
+                <span>Assaisonné à la truffe sur lit de caviar</span>
+              </div>
+              <div class="card__desc">
+                <span>20</span>
+                <span>€</span>
+              </div>
+            </article>
+          </section>
+          <section class="menu">
+            <h2 class="menu__title">Plats</h2>
+            <article class="card">
+              <div class="card__plate">
+                <h3>Filet de bœuf aux herbes</h3>
+                <span>Accompagné de sa ribambelle de légumes</span>
+              </div>
+              <div class="card__desc">
+                <span>40</span>
+                <span>€</span>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card__plate">
+                <h3>Parmentier de queue de bœuf</h3>
+                <span>À la truffe noire sur sa purée de panais</span>
+              </div>
+              <div class="card__desc">
+                <span>35</span>
+                <span>€</span>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card__plate">
+                <h3>Filet de turbot</h3>
+                <span>Aux agrumes</span>
+              </div>
+              <div class="card__desc">
+                <span>44</span>
+                <span>€</span>
+              </div>
+            </article>
+          </section>
+          <section class="menu">
+            <h2 class="menu__title">Desserts</h2>
+            <article class="card">
+              <div class="card__plate">
+                <h3>Paris-Brest</h3>
+                <span>Revisité</span>
+              </div>
+              <div class="card__desc">
+                <span>18</span>
+                <span>€</span>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card__plate">
+                <h3>Macaron au chocolat d'exception</h3>
+                <span>Et glace à la vanille de Madagascar</span>
+              </div>
+              <div class="card__desc">
+                <span>22</span>
+                <span>€</span>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card__plate">
+                <h3>Mousse au chocolat</h3>
+                <span>Au piment d'Espelette et à la truffe noire</span>
+              </div>
+              <div class="card__desc">
+                <span>23</span>
+                <span>€</span>
+              </div>
+            </article>
+          </section>
+          <section class="command">
+            <button type="button" class="btn">
+              <span>Commander</span>
+            </button>
+          </section>
+          <div class="cache"></div>
+        </div>
+      </main>
+      <footer class="footer">
+        <h1 class="footer__title">ohmyfood</h1>
+        <nav class="footer__links">
+          <ul>
+            <li class="footer__links--190">
+              <img src="../assets/images/icons/restaurant.svg" alt="" />
+              <span>Proposer un restaurant</span>
+            </li>
+            <li class="footer__links--190">
+              <img src="../assets/images/icons/partner.svg" alt="" />
+              <span>Devenir partenaire</span>
+            </li>
+            <li class="footer__links--130">Mentions légales</li>
+            <li class="footer__links--130">Contact</li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>
