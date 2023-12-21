@@ -3,7 +3,7 @@
 }
 
 @mixin bg_list($imageurl) {
-  background: url($imageurl) center left 33px no-repeat;
+  background-image: url($imageurl) center left 33px no-repeat;
 }
 
 @mixin responsive($breakpoint) {

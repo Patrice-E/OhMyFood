@@ -160,6 +160,14 @@ ul {
   background-color: #fff;
 }
 
+.max-content {
+  width: 100%;
+  max-width: 1053px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
 /*-- Intro --*/
 .intro {
   display: flex;
@@ -184,12 +192,10 @@ ul {
 /*-- Fonctionnement --*/
 .fonctionnement {
   padding: 30px 15px;
+  display: flex;
+  justify-content: center;
 }
-.fonctionnement .content {
-  max-width: 1053px;
-  align-items: flex-start;
-}
-.fonctionnement .content__list {
+.fonctionnement .max-content__list {
   width: 100%;
   margin-top: 0;
   padding-left: 12.5px;
@@ -198,7 +204,13 @@ ul {
   align-items: center;
   gap: 25px;
 }
-.fonctionnement .content__list li {
+@media (min-width: 1024px) {
+  .fonctionnement .max-content__list {
+    flex-direction: unset;
+    justify-content: space-between;
+  }
+}
+.fonctionnement .max-content__list li {
   min-width: 276px;
   min-height: 72px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
@@ -208,7 +220,7 @@ ul {
   padding-left: 73px;
   position: relative;
 }
-.fonctionnement .content__list li::before {
+.fonctionnement .max-content__list li::before {
   position: absolute;
   font-size: 14px;
   color: white;
@@ -222,22 +234,27 @@ ul {
   justify-content: center;
   align-items: center;
 }
-.fonctionnement .content__list .l1 {
-  background: url("../../images/icons/phone.svg") center left 33px no-repeat;
+@media (min-width: 1024px) {
+  .fonctionnement .max-content__list li {
+    background-color: #f3f3f3;
+  }
 }
-.fonctionnement .content__list .l1::before {
+.fonctionnement .max-content__list .l1 {
+  background-image: url("../../images/icons/phone.svg") center left 33px no-repeat;
+}
+.fonctionnement .max-content__list .l1::before {
   content: "1";
 }
-.fonctionnement .content__list .l2 {
-  background: url("../../images/icons/list.svg") center left 33px no-repeat;
+.fonctionnement .max-content__list .l2 {
+  background-image: url("../../images/icons/list.svg") center left 33px no-repeat;
 }
-.fonctionnement .content__list .l2::before {
+.fonctionnement .max-content__list .l2::before {
   content: "2";
 }
-.fonctionnement .content__list .l3 {
-  background: url("../../images/icons/store.svg") center left 33px no-repeat;
+.fonctionnement .max-content__list .l3 {
+  background-image: url("../../images/icons/store.svg") center left 33px no-repeat;
 }
-.fonctionnement .content__list .l3::before {
+.fonctionnement .max-content__list .l3::before {
   content: "3";
 }
 
@@ -246,8 +263,7 @@ ul {
   margin-bottom: 50px;
   padding: 0 15px;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  justify-content: center;
   gap: 20px;
 }
 .restaurants article {
@@ -255,8 +271,10 @@ ul {
 }
 
 .cards {
+  width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 20px;
   transform: scale(1);
   transition: transform 0.3s;
@@ -286,6 +304,7 @@ ul {
 }
 
 .card {
+  min-width: 290px;
   background-color: #fff;
   overflow: hidden;
   position: relative;
@@ -300,7 +319,7 @@ ul {
   padding: 5px 10px;
 }
 .card img {
-  width: 290px;
+  width: 100%;
   height: 180px;
   object-fit: cover;
 }
