@@ -1,0 +1,50 @@
+.footer {
+  padding: 22px 25px;
+  background-color: $bg_dark;
+  color: white;
+
+  @include responsive('large') {
+    padding-top: 42px;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+.footer__title {
+  font-family: 'Shrikhand', cursive;
+  font-weight: 400;
+  font-size: 18px;
+
+  @include responsive('large') {
+    order: 2;
+  }
+}
+.footer__links {
+  @include responsive('large') {
+    &--190 {
+      width: 190px;
+    }
+    &--130 {
+      width: 130px;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    img {
+      padding-right: 10px;
+    }
+
+    @include responsive('large') {
+      flex-direction: row;
+      order: 1;
+    }
+  }
+
+  @include responsive('large') {
+    order: 1;
+  }
+}
