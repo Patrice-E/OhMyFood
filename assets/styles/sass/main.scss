@@ -1,10 +1,11 @@
-@import './utils/_variables';
+@import './utils/variables';
 @import './utils/helpers';
-@import './utils/_mixins';
+@import './utils/mixins';
 
 @import './base/reset';
 
-@import './components/_buttons';
+@import './components/loader';
+@import './components/buttons';
 
 @import './layouts/header';
 @import './layouts/footer';
