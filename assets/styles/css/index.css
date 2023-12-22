@@ -462,6 +462,9 @@ ul {
 .menu__card:hover .menu__check {
   margin-right: 0;
 }
+.menu__card:hover .menu__check img {
+  transform: rotate(360deg);
+}
 .menu__item {
   width: auto;
   max-width: calc(100vw - 100px);
@@ -490,6 +493,9 @@ ul {
   align-items: center;
   margin-right: -59px;
   transition-duration: 0.6s;
+}
+.menu__check img {
+  transition: transform 0.6s ease-in-out;
 }
 
 .command {
