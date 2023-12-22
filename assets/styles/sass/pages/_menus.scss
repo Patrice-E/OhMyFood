@@ -65,6 +65,8 @@
     box-shadow: 0px 4px 15px 0px #0000001a;
     overflow: hidden;
     display: flex;
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
 
     &:hover .menu__item {
       width: calc(100vw - 159px);
@@ -121,4 +123,29 @@
 
 .command {
   margin: 40px;
+}
+
+.appear {
+  animation: appear 0.6s ease-in-out;
+}
+.delay1 {
+  animation-delay: 0.2s;
+}
+.delay2 {
+  animation-delay: 0.4s;
+}
+.delay3 {
+  animation-delay: 0.6s;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
