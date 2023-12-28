@@ -367,19 +367,19 @@ ul {
   }
 }
 .fonctionnement .max-content__list .l1 {
-  background-image: url("../../images/icons/phone.svg") center left 33px no-repeat;
+  background: url("../../images/icons/phone.svg") center left 33px no-repeat;
 }
 .fonctionnement .max-content__list .l1::before {
   content: "1";
 }
 .fonctionnement .max-content__list .l2 {
-  background-image: url("../../images/icons/list.svg") center left 33px no-repeat;
+  background: url("../../images/icons/list.svg") center left 33px no-repeat;
 }
 .fonctionnement .max-content__list .l2::before {
   content: "2";
 }
 .fonctionnement .max-content__list .l3 {
-  background-image: url("../../images/icons/store.svg") center left 33px no-repeat;
+  background: url("../../images/icons/store.svg") center left 33px no-repeat;
 }
 .fonctionnement .max-content__list .l3::before {
   content: "3";
