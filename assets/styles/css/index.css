@@ -18,6 +18,11 @@ body {
   background-color: #f3f3f3;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
 ul {
   list-style: none;
   padding-left: 0;
@@ -526,20 +531,20 @@ ul {
   justify-content: center;
   align-items: center;
 }
-.menu__title h2 {
+.menu__title h1 {
   margin-bottom: 0;
 }
 .menu__subtitle {
   width: 100%;
   max-width: 634px;
 }
-.menu__subtitle h3 {
+.menu__subtitle h2 {
   text-transform: uppercase;
   font-weight: 300;
   font-size: 16px;
   position: relative;
 }
-.menu__subtitle h3::after {
+.menu__subtitle h2::after {
   position: absolute;
   content: "";
   width: 40px;

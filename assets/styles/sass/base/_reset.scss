@@ -10,6 +10,11 @@ body {
   background-color: $bg_primary;
 }
 
+a {
+  text-decoration: none;
+  color: $light;
+}
+
 ul {
   list-style: none;
   padding-left: 0;
